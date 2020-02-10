@@ -56,12 +56,12 @@ The value $N^2_ml$ can be set with the required change in density across the jum
 \begin{equation}
     N_\textrm{ml}^2 = \frac{g \Delta \rho }{2 \rho_0 \delta_p}
 \end{equation}{}
-is the appropriate amplitude to set. Look at Latmix data from the summer time in the Sargasso, and it seems like $\Delta \rho$ can certainly be on the order of 2 $kg/m^3$.
+is the appropriate amplitude to set. Look at Latmix data from the summer time in the Sargasso, and it seems like $\Delta \rho$ can certainly be on the order of 2 $kg/m^3$ or even more. Check out figure \ref{modes-3-deltarho}---the surface looks quite a bit different, but also realistic!
 \begin{figure}
 \vspace{-30pt}
     \includegraphics[width=1.0\textwidth]{ModesWithDeltaRho3}
   \caption{Basic stratification profile with a sizeable density jump after the mixed layer. Interior modes 1 and 2 are shown, blue and red.}
-  \label{modes-no-deltarho}
+  \label{modes-3-deltarho}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -70,14 +70,21 @@ is the appropriate amplitude to set. Look at Latmix data from the summer time in
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Now let's check out the 
-
 \begin{figure}
 \vspace{-30pt}
-    \includegraphics[width=1.0\textwidth]{ModesWithDeltaRho3}
-  \caption{Basic stratification profile with a sizeable density jump after the mixed layer. Interior modes 1 and 2 are shown, blue and red.}
-  \label{modes-no-deltarho}
+    \includegraphics[width=0.45\textwidth]{ModesWithDeltaRhoComparisonDensityMatched}
+    \includegraphics[width=0.45\textwidth]{ModesWithDeltaRhoComparisonSSHMatched}
+  \caption{Comparison of the lowest interior modes where the density anomaly is assumed to match (left) and where the SSH is assumed to match (right). }
+  \label{ModesWithDeltaRhoComparison}
 \end{figure}
+
+Now let's check out how the lowest mode compares in these two scenarios--one without a $\Delta \rho$ jump across the transition layer, and the other with a sizeable jump. See figure \ref{ModesWithDeltaRhoComparison}. In the left panel, we match the density anomaly in the interior---and then you can see that the $(u,v)$ modes (and therefore also SSH) differ substantially depending on whether $\Delta \rho$ is larger or not. The panel on the right shows the opposite situation---now SSH is made to match, and you can see how the velocity and density profiles below the transition layer differ substantially.
+
+I think the more realistic scenario is the first one---the density anomaly is fixed in the interior, and the mixed layer and transition layer undergo some sort of change (or the eddy moves to a new location), and then the surface velocity changes accordingly. Pete---thoughts?
+
+
+It might be worth considering how the \textbf{second} interior mode responds to near surface changes in stratification. It is the second mode that is most strongly affected in the sense that it carries.
+
 
 \bibliography{references}
 
